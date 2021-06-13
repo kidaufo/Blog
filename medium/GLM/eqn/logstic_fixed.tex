@@ -1,0 +1,15 @@
+% LaTeX compiler: platex
+% DVI driver: dvipdfmx
+\documentclass[fleqn,papersize]{jsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage[dvipdfmx]{graphicx,color}
+\pagestyle{empty}
+
+\begin{document}
+\begin{eqnarray*}
+	z_{i} &=& b_{0} + b_{1}x_{i} \\
+	q_{i} &=& \frac{1}{1+\exp(-z_{i})} \\
+	y_{i} &\sim& {\rm Bern}(q_{i})
+\end{eqnarray*}
+
+\end{document}
